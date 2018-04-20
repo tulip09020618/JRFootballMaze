@@ -15,6 +15,10 @@
 		65DF0B102089D8820065E14C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DF0B0F2089D8820065E14C /* main.m */; };
 		65DF0B1A2089D8830065E14C /* JRFootballMazeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DF0B192089D8830065E14C /* JRFootballMazeTests.m */; };
 		65DF0B252089D8830065E14C /* JRFootballMazeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DF0B242089D8830065E14C /* JRFootballMazeUITests.m */; };
+		65DF0B3B2089D9890065E14C /* JRMazeCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DF0B3A2089D9890065E14C /* JRMazeCellModel.m */; };
+		65DF0B3E2089E0530065E14C /* JRFootballModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DF0B3D2089E0530065E14C /* JRFootballModel.m */; };
+		65DF0B412089E09D0065E14C /* JRMazeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DF0B402089E09D0065E14C /* JRMazeManager.m */; };
+		65DF0B442089F94E0065E14C /* JRMazeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DF0B432089F94E0065E14C /* JRMazeView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,14 @@
 		65DF0B202089D8830065E14C /* JRFootballMazeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JRFootballMazeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		65DF0B242089D8830065E14C /* JRFootballMazeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRFootballMazeUITests.m; sourceTree = "<group>"; };
 		65DF0B262089D8830065E14C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65DF0B392089D9890065E14C /* JRMazeCellModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRMazeCellModel.h; sourceTree = "<group>"; };
+		65DF0B3A2089D9890065E14C /* JRMazeCellModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRMazeCellModel.m; sourceTree = "<group>"; };
+		65DF0B3C2089E0530065E14C /* JRFootballModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRFootballModel.h; sourceTree = "<group>"; };
+		65DF0B3D2089E0530065E14C /* JRFootballModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRFootballModel.m; sourceTree = "<group>"; };
+		65DF0B3F2089E09D0065E14C /* JRMazeManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRMazeManager.h; sourceTree = "<group>"; };
+		65DF0B402089E09D0065E14C /* JRMazeManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRMazeManager.m; sourceTree = "<group>"; };
+		65DF0B422089F94E0065E14C /* JRMazeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRMazeView.h; sourceTree = "<group>"; };
+		65DF0B432089F94E0065E14C /* JRMazeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRMazeView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +113,10 @@
 		65DF0AFF2089D87A0065E14C /* JRFootballMaze */ = {
 			isa = PBXGroup;
 			children = (
+				65DF0B352089D9180065E14C /* Utils */,
+				65DF0B322089D8FF0065E14C /* Model */,
+				65DF0B332089D9090065E14C /* View */,
+				65DF0B342089D90E0065E14C /* Controller */,
 				65DF0B002089D87A0065E14C /* AppDelegate.h */,
 				65DF0B012089D87A0065E14C /* AppDelegate.m */,
 				65DF0B032089D87A0065E14C /* ViewController.h */,
@@ -130,6 +146,42 @@
 				65DF0B262089D8830065E14C /* Info.plist */,
 			);
 			path = JRFootballMazeUITests;
+			sourceTree = "<group>";
+		};
+		65DF0B322089D8FF0065E14C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				65DF0B392089D9890065E14C /* JRMazeCellModel.h */,
+				65DF0B3A2089D9890065E14C /* JRMazeCellModel.m */,
+				65DF0B3C2089E0530065E14C /* JRFootballModel.h */,
+				65DF0B3D2089E0530065E14C /* JRFootballModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		65DF0B332089D9090065E14C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				65DF0B422089F94E0065E14C /* JRMazeView.h */,
+				65DF0B432089F94E0065E14C /* JRMazeView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		65DF0B342089D90E0065E14C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		65DF0B352089D9180065E14C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				65DF0B3F2089E09D0065E14C /* JRMazeManager.h */,
+				65DF0B402089E09D0065E14C /* JRMazeManager.m */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,8 +315,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65DF0B3E2089E0530065E14C /* JRFootballModel.m in Sources */,
 				65DF0B052089D87A0065E14C /* ViewController.m in Sources */,
+				65DF0B442089F94E0065E14C /* JRMazeView.m in Sources */,
 				65DF0B102089D8820065E14C /* main.m in Sources */,
+				65DF0B3B2089D9890065E14C /* JRMazeCellModel.m in Sources */,
+				65DF0B412089E09D0065E14C /* JRMazeManager.m in Sources */,
 				65DF0B022089D87A0065E14C /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -437,6 +493,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K57F93BM5Q;
 				INFOPLIST_FILE = JRFootballMaze/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -454,6 +511,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K57F93BM5Q;
 				INFOPLIST_FILE = JRFootballMaze/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

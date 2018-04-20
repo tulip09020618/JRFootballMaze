@@ -7,9 +7,13 @@
 //
 
 #import "ViewController.h"
+#import "JRMazeManager.h"
 
 @interface ViewController ()
 
+@property (nonatomic, strong) JRMazeView *mazeView;
+
+- (IBAction)reSet:(id)sender;
 @end
 
 @implementation ViewController
@@ -17,6 +21,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    // 生成迷宫
+    JRMazeView *mazeView = [[JRMazeManager manager] generateMazeWithRows:30 withCols:30 withSpace:10];
+    mazeView.center = self.view.center;
+    [self.view addSubview:mazeView];
+    self.mazeView = mazeView;
 }
 
 
@@ -26,4 +36,14 @@
 }
 
 
+- (IBAction)reSet:(id)sender {
+    
+    [self.mazeView removeFromSuperview];
+    
+    // 生成迷宫
+    JRMazeView *mazeView = [[JRMazeManager manager] generateMazeWithRows:30 withCols:30 withSpace:10];
+    mazeView.center = self.view.center;
+    [self.view addSubview:mazeView];
+    self.mazeView = mazeView;
+}
 @end
