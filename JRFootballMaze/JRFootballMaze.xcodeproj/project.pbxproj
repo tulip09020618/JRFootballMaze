@@ -1,0 +1,583 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		65DF0B022089D87A0065E14C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DF0B012089D87A0065E14C /* AppDelegate.m */; };
+		65DF0B052089D87A0065E14C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DF0B042089D87A0065E14C /* ViewController.m */; };
+		65DF0B082089D87A0065E14C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65DF0B062089D87A0065E14C /* Main.storyboard */; };
+		65DF0B0A2089D8820065E14C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65DF0B092089D8820065E14C /* Assets.xcassets */; };
+		65DF0B0D2089D8820065E14C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65DF0B0B2089D8820065E14C /* LaunchScreen.storyboard */; };
+		65DF0B102089D8820065E14C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DF0B0F2089D8820065E14C /* main.m */; };
+		65DF0B1A2089D8830065E14C /* JRFootballMazeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DF0B192089D8830065E14C /* JRFootballMazeTests.m */; };
+		65DF0B252089D8830065E14C /* JRFootballMazeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DF0B242089D8830065E14C /* JRFootballMazeUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		65DF0B162089D8830065E14C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 65DF0AF52089D87A0065E14C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 65DF0AFC2089D87A0065E14C;
+			remoteInfo = JRFootballMaze;
+		};
+		65DF0B212089D8830065E14C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 65DF0AF52089D87A0065E14C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 65DF0AFC2089D87A0065E14C;
+			remoteInfo = JRFootballMaze;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		65DF0AFD2089D87A0065E14C /* JRFootballMaze.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JRFootballMaze.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		65DF0B002089D87A0065E14C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		65DF0B012089D87A0065E14C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		65DF0B032089D87A0065E14C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		65DF0B042089D87A0065E14C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		65DF0B072089D87A0065E14C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		65DF0B092089D8820065E14C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		65DF0B0C2089D8820065E14C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		65DF0B0E2089D8820065E14C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65DF0B0F2089D8820065E14C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		65DF0B152089D8830065E14C /* JRFootballMazeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JRFootballMazeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		65DF0B192089D8830065E14C /* JRFootballMazeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRFootballMazeTests.m; sourceTree = "<group>"; };
+		65DF0B1B2089D8830065E14C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65DF0B202089D8830065E14C /* JRFootballMazeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JRFootballMazeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		65DF0B242089D8830065E14C /* JRFootballMazeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRFootballMazeUITests.m; sourceTree = "<group>"; };
+		65DF0B262089D8830065E14C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		65DF0AFA2089D87A0065E14C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65DF0B122089D8830065E14C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65DF0B1D2089D8830065E14C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		65DF0AF42089D87A0065E14C = {
+			isa = PBXGroup;
+			children = (
+				65DF0AFF2089D87A0065E14C /* JRFootballMaze */,
+				65DF0B182089D8830065E14C /* JRFootballMazeTests */,
+				65DF0B232089D8830065E14C /* JRFootballMazeUITests */,
+				65DF0AFE2089D87A0065E14C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		65DF0AFE2089D87A0065E14C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				65DF0AFD2089D87A0065E14C /* JRFootballMaze.app */,
+				65DF0B152089D8830065E14C /* JRFootballMazeTests.xctest */,
+				65DF0B202089D8830065E14C /* JRFootballMazeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		65DF0AFF2089D87A0065E14C /* JRFootballMaze */ = {
+			isa = PBXGroup;
+			children = (
+				65DF0B002089D87A0065E14C /* AppDelegate.h */,
+				65DF0B012089D87A0065E14C /* AppDelegate.m */,
+				65DF0B032089D87A0065E14C /* ViewController.h */,
+				65DF0B042089D87A0065E14C /* ViewController.m */,
+				65DF0B062089D87A0065E14C /* Main.storyboard */,
+				65DF0B092089D8820065E14C /* Assets.xcassets */,
+				65DF0B0B2089D8820065E14C /* LaunchScreen.storyboard */,
+				65DF0B0E2089D8820065E14C /* Info.plist */,
+				65DF0B0F2089D8820065E14C /* main.m */,
+			);
+			path = JRFootballMaze;
+			sourceTree = "<group>";
+		};
+		65DF0B182089D8830065E14C /* JRFootballMazeTests */ = {
+			isa = PBXGroup;
+			children = (
+				65DF0B192089D8830065E14C /* JRFootballMazeTests.m */,
+				65DF0B1B2089D8830065E14C /* Info.plist */,
+			);
+			path = JRFootballMazeTests;
+			sourceTree = "<group>";
+		};
+		65DF0B232089D8830065E14C /* JRFootballMazeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				65DF0B242089D8830065E14C /* JRFootballMazeUITests.m */,
+				65DF0B262089D8830065E14C /* Info.plist */,
+			);
+			path = JRFootballMazeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		65DF0AFC2089D87A0065E14C /* JRFootballMaze */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65DF0B292089D8830065E14C /* Build configuration list for PBXNativeTarget "JRFootballMaze" */;
+			buildPhases = (
+				65DF0AF92089D87A0065E14C /* Sources */,
+				65DF0AFA2089D87A0065E14C /* Frameworks */,
+				65DF0AFB2089D87A0065E14C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JRFootballMaze;
+			productName = JRFootballMaze;
+			productReference = 65DF0AFD2089D87A0065E14C /* JRFootballMaze.app */;
+			productType = "com.apple.product-type.application";
+		};
+		65DF0B142089D8830065E14C /* JRFootballMazeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65DF0B2C2089D8830065E14C /* Build configuration list for PBXNativeTarget "JRFootballMazeTests" */;
+			buildPhases = (
+				65DF0B112089D8830065E14C /* Sources */,
+				65DF0B122089D8830065E14C /* Frameworks */,
+				65DF0B132089D8830065E14C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				65DF0B172089D8830065E14C /* PBXTargetDependency */,
+			);
+			name = JRFootballMazeTests;
+			productName = JRFootballMazeTests;
+			productReference = 65DF0B152089D8830065E14C /* JRFootballMazeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		65DF0B1F2089D8830065E14C /* JRFootballMazeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65DF0B2F2089D8830065E14C /* Build configuration list for PBXNativeTarget "JRFootballMazeUITests" */;
+			buildPhases = (
+				65DF0B1C2089D8830065E14C /* Sources */,
+				65DF0B1D2089D8830065E14C /* Frameworks */,
+				65DF0B1E2089D8830065E14C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				65DF0B222089D8830065E14C /* PBXTargetDependency */,
+			);
+			name = JRFootballMazeUITests;
+			productName = JRFootballMazeUITests;
+			productReference = 65DF0B202089D8830065E14C /* JRFootballMazeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		65DF0AF52089D87A0065E14C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = JR;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = tulip;
+				TargetAttributes = {
+					65DF0AFC2089D87A0065E14C = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					65DF0B142089D8830065E14C = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 65DF0AFC2089D87A0065E14C;
+					};
+					65DF0B1F2089D8830065E14C = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 65DF0AFC2089D87A0065E14C;
+					};
+				};
+			};
+			buildConfigurationList = 65DF0AF82089D87A0065E14C /* Build configuration list for PBXProject "JRFootballMaze" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 65DF0AF42089D87A0065E14C;
+			productRefGroup = 65DF0AFE2089D87A0065E14C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				65DF0AFC2089D87A0065E14C /* JRFootballMaze */,
+				65DF0B142089D8830065E14C /* JRFootballMazeTests */,
+				65DF0B1F2089D8830065E14C /* JRFootballMazeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		65DF0AFB2089D87A0065E14C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65DF0B0D2089D8820065E14C /* LaunchScreen.storyboard in Resources */,
+				65DF0B0A2089D8820065E14C /* Assets.xcassets in Resources */,
+				65DF0B082089D87A0065E14C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65DF0B132089D8830065E14C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65DF0B1E2089D8830065E14C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		65DF0AF92089D87A0065E14C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65DF0B052089D87A0065E14C /* ViewController.m in Sources */,
+				65DF0B102089D8820065E14C /* main.m in Sources */,
+				65DF0B022089D87A0065E14C /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65DF0B112089D8830065E14C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65DF0B1A2089D8830065E14C /* JRFootballMazeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65DF0B1C2089D8830065E14C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65DF0B252089D8830065E14C /* JRFootballMazeUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		65DF0B172089D8830065E14C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 65DF0AFC2089D87A0065E14C /* JRFootballMaze */;
+			targetProxy = 65DF0B162089D8830065E14C /* PBXContainerItemProxy */;
+		};
+		65DF0B222089D8830065E14C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 65DF0AFC2089D87A0065E14C /* JRFootballMaze */;
+			targetProxy = 65DF0B212089D8830065E14C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		65DF0B062089D87A0065E14C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				65DF0B072089D87A0065E14C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		65DF0B0B2089D8820065E14C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				65DF0B0C2089D8820065E14C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		65DF0B272089D8830065E14C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		65DF0B282089D8830065E14C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		65DF0B2A2089D8830065E14C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K57F93BM5Q;
+				INFOPLIST_FILE = JRFootballMaze/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tulip.JRFootballMaze;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		65DF0B2B2089D8830065E14C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K57F93BM5Q;
+				INFOPLIST_FILE = JRFootballMaze/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tulip.JRFootballMaze;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		65DF0B2D2089D8830065E14C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K57F93BM5Q;
+				INFOPLIST_FILE = JRFootballMazeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tulip.JRFootballMazeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JRFootballMaze.app/JRFootballMaze";
+			};
+			name = Debug;
+		};
+		65DF0B2E2089D8830065E14C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K57F93BM5Q;
+				INFOPLIST_FILE = JRFootballMazeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tulip.JRFootballMazeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JRFootballMaze.app/JRFootballMaze";
+			};
+			name = Release;
+		};
+		65DF0B302089D8830065E14C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K57F93BM5Q;
+				INFOPLIST_FILE = JRFootballMazeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tulip.JRFootballMazeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JRFootballMaze;
+			};
+			name = Debug;
+		};
+		65DF0B312089D8830065E14C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K57F93BM5Q;
+				INFOPLIST_FILE = JRFootballMazeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tulip.JRFootballMazeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JRFootballMaze;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		65DF0AF82089D87A0065E14C /* Build configuration list for PBXProject "JRFootballMaze" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65DF0B272089D8830065E14C /* Debug */,
+				65DF0B282089D8830065E14C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65DF0B292089D8830065E14C /* Build configuration list for PBXNativeTarget "JRFootballMaze" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65DF0B2A2089D8830065E14C /* Debug */,
+				65DF0B2B2089D8830065E14C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65DF0B2C2089D8830065E14C /* Build configuration list for PBXNativeTarget "JRFootballMazeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65DF0B2D2089D8830065E14C /* Debug */,
+				65DF0B2E2089D8830065E14C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65DF0B2F2089D8830065E14C /* Build configuration list for PBXNativeTarget "JRFootballMazeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65DF0B302089D8830065E14C /* Debug */,
+				65DF0B312089D8830065E14C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 65DF0AF52089D87A0065E14C /* Project object */;
+}
