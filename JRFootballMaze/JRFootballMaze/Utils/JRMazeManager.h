@@ -30,4 +30,28 @@
  */
 - (JRMazeView *)generateMazeWithRows:(NSInteger)rows withCols:(NSInteger)cols withSpace:(NSInteger)space;
 
+#pragma mark 移动足球
+
+/**
+ 向左移动
+ */
+- (void)left;
+
+/**
+ 向上移动
+ */
+- (void)up;
+
+/**
+ 向右移动
+ */
+- (void)right;
+
+/**
+ 向下移动
+ */
+- (void)down;
+
+@property (nonatomic, strong) void (^ success) (void);
+
 @end

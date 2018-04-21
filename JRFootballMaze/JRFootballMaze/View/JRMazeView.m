@@ -30,8 +30,9 @@
     // 根据生成的迷宫数据绘制迷宫图
     for (NSInteger i = 0; i < self.mazeCells.count; i ++) {
         JRMazeCellModel *cell = self.mazeCells[i];
+        NSLog(@"画直线，row:%ld, col:%ld", cell.row, cell.col);
         
-        if (!cell.canLeft) {
+        if (!cell.canLeft && cell.col == 0) {
             // 绘制左边直线
 
             // 将画笔移动到左上角
@@ -39,7 +40,7 @@
             // 画一条直线到左下角
             CGContextAddLineToPoint(context, cell.col * self.space, (cell.row + 1) * self.space);
         }
-        if (!cell.canUp) {
+        if (!cell.canUp && cell.row == 0) {
             // 绘制上边直线
             
             // 将画笔移动到左上角

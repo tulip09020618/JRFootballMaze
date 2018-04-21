@@ -8,6 +8,7 @@
 
 #import "JRMazeManager.h"
 #import "JRMazeCellModel.h"
+#import "JRFootballView.h"
 
 @interface JRMazeManager ()
 
@@ -30,6 +31,16 @@
  迷宫数据源：存放所有迷宫单元模型
  */
 @property (nonatomic, strong) NSMutableArray<JRMazeCellModel *> *mazeCells;
+
+/**
+ 足球
+ */
+@property (nonatomic, strong) JRFootballView *football;
+
+/**
+ 记录是否已通关
+ */
+@property (nonatomic, assign) BOOL successful;
 
 @end
 
@@ -69,6 +80,7 @@ static JRMazeManager *mazeManager = nil;
     self.rows = rows;
     self.cols = cols;
     self.space = space;
+    self.successful = NO;
     
     // 清空数据源中的数据
     if (self.mazeCells.count > 0) {
@@ -204,7 +216,132 @@ static JRMazeManager *mazeManager = nil;
     mazeView.mazeCells = self.mazeCells;
     mazeView.backgroundColor = [UIColor whiteColor];
     
+    // 生成足球，放在迷宫图上
+    JRFootballView *footballView = [self generateFootball];
+    [mazeView addSubview:footballView];
+    self.football = footballView;
+    
     return mazeView;
+}
+
+#pragma mark 生成足球
+- (JRFootballView *)generateFootball {
+    
+    JRFootballView *football = [[JRFootballView alloc] initWithSpace:self.space];
+    
+    return football;
+}
+
+#pragma mark 移动足球
+
+/**
+ 向左移动
+ */
+- (void)left {
+    
+    NSInteger index = self.football.row * self.cols + self.football.col;
+    if (index >= self.mazeCells.count) {
+        return;
+    }
+    
+    if (self.football == nil) {
+        return;
+    }
+    
+    if (self.successful) {
+        return;
+    }
+    
+    // 获取足球所在行列的cellModel
+    JRMazeCellModel *cell = self.mazeCells[index];
+    if (cell.canLeft && cell.col != 0) {
+        [self.football moveToLeft];
+    }
+}
+
+/**
+ 向上移动
+ */
+- (void)up {
+    
+    NSInteger index = self.football.row * self.cols + self.football.col;
+    if (index >= self.mazeCells.count) {
+        return;
+    }
+    
+    if (self.football == nil) {
+        return;
+    }
+    
+    if (self.successful) {
+        return;
+    }
+    
+    // 获取足球所在行列的cellModel
+    JRMazeCellModel *cell = self.mazeCells[index];
+    if (cell.canUp && cell.row != 0) {
+        [self.football moveToUp];
+    }
+}
+
+/**
+ 向右移动
+ */
+- (void)right {
+    
+    NSInteger index = self.football.row * self.cols + self.football.col;
+    if (index >= self.mazeCells.count) {
+        return;
+    }
+    
+    if (self.football == nil) {
+        return;
+    }
+    
+    if (self.successful) {
+        return;
+    }
+    
+    // 获取足球所在行列的cellModel
+    JRMazeCellModel *cell = self.mazeCells[index];
+    
+    if (cell.row == self.rows - 1 && cell.col == self.cols -1) {
+        // 通关
+        self.successful = YES;
+        if (self.success) {
+            self.success();
+        }
+        return;
+    }
+    
+    if (cell.canRight && cell.col != self.cols - 1) {
+        [self.football moveToRight];
+    }
+}
+
+/**
+ 向下移动
+ */
+- (void)down {
+    
+    NSInteger index = self.football.row * self.cols + self.football.col;
+    if (index >= self.mazeCells.count) {
+        return;
+    }
+    
+    if (self.football == nil) {
+        return;
+    }
+    
+    if (self.successful) {
+        return;
+    }
+    
+    // 获取足球所在行列的cellModel
+    JRMazeCellModel *cell = self.mazeCells[index];
+    if (cell.canDown && cell.row != self.rows - 1) {
+        [self.football moveToDown];
+    }
 }
 
 @end

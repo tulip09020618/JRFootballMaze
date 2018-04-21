@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		65D51039208AFE89002DC020 /* football.png in Resources */ = {isa = PBXBuildFile; fileRef = 65D51038208AFE89002DC020 /* football.png */; };
+		65D5103C208AFEAD002DC020 /* JRFootballView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D5103B208AFEAD002DC020 /* JRFootballView.m */; };
+		65D51041208B230A002DC020 /* JRUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D51040208B230A002DC020 /* JRUtils.m */; };
 		65DF0B022089D87A0065E14C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DF0B012089D87A0065E14C /* AppDelegate.m */; };
 		65DF0B052089D87A0065E14C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DF0B042089D87A0065E14C /* ViewController.m */; };
 		65DF0B082089D87A0065E14C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65DF0B062089D87A0065E14C /* Main.storyboard */; };
@@ -39,6 +42,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		65D51038208AFE89002DC020 /* football.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = football.png; sourceTree = "<group>"; };
+		65D5103A208AFEAD002DC020 /* JRFootballView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRFootballView.h; sourceTree = "<group>"; };
+		65D5103B208AFEAD002DC020 /* JRFootballView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRFootballView.m; sourceTree = "<group>"; };
+		65D5103D208B225A002DC020 /* Help.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Help.h; sourceTree = "<group>"; };
+		65D5103E208B226B002DC020 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		65D5103F208B230A002DC020 /* JRUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRUtils.h; sourceTree = "<group>"; };
+		65D51040208B230A002DC020 /* JRUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRUtils.m; sourceTree = "<group>"; };
 		65DF0AFD2089D87A0065E14C /* JRFootballMaze.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JRFootballMaze.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65DF0B002089D87A0065E14C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		65DF0B012089D87A0065E14C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -90,6 +100,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		65D51037208AFE68002DC020 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				65D51038208AFE89002DC020 /* football.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		65DF0AF42089D87A0065E14C = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +131,7 @@
 		65DF0AFF2089D87A0065E14C /* JRFootballMaze */ = {
 			isa = PBXGroup;
 			children = (
+				65D51037208AFE68002DC020 /* Resources */,
 				65DF0B352089D9180065E14C /* Utils */,
 				65DF0B322089D8FF0065E14C /* Model */,
 				65DF0B332089D9090065E14C /* View */,
@@ -164,6 +183,8 @@
 			children = (
 				65DF0B422089F94E0065E14C /* JRMazeView.h */,
 				65DF0B432089F94E0065E14C /* JRMazeView.m */,
+				65D5103A208AFEAD002DC020 /* JRFootballView.h */,
+				65D5103B208AFEAD002DC020 /* JRFootballView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -180,6 +201,10 @@
 			children = (
 				65DF0B3F2089E09D0065E14C /* JRMazeManager.h */,
 				65DF0B402089E09D0065E14C /* JRMazeManager.m */,
+				65D5103D208B225A002DC020 /* Help.h */,
+				65D5103E208B226B002DC020 /* PrefixHeader.pch */,
+				65D5103F208B230A002DC020 /* JRUtils.h */,
+				65D51040208B230A002DC020 /* JRUtils.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -290,6 +315,7 @@
 			files = (
 				65DF0B0D2089D8820065E14C /* LaunchScreen.storyboard in Resources */,
 				65DF0B0A2089D8820065E14C /* Assets.xcassets in Resources */,
+				65D51039208AFE89002DC020 /* football.png in Resources */,
 				65DF0B082089D87A0065E14C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -317,9 +343,11 @@
 			files = (
 				65DF0B3E2089E0530065E14C /* JRFootballModel.m in Sources */,
 				65DF0B052089D87A0065E14C /* ViewController.m in Sources */,
+				65D51041208B230A002DC020 /* JRUtils.m in Sources */,
 				65DF0B442089F94E0065E14C /* JRMazeView.m in Sources */,
 				65DF0B102089D8820065E14C /* main.m in Sources */,
 				65DF0B3B2089D9890065E14C /* JRMazeCellModel.m in Sources */,
+				65D5103C208AFEAD002DC020 /* JRFootballView.m in Sources */,
 				65DF0B412089E09D0065E14C /* JRMazeManager.m in Sources */,
 				65DF0B022089D87A0065E14C /* AppDelegate.m in Sources */,
 			);
@@ -492,6 +520,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K57F93BM5Q;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/JRFootballMaze/Utils/PrefixHeader.pch";
 				INFOPLIST_FILE = JRFootballMaze/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -510,6 +539,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K57F93BM5Q;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/JRFootballMaze/Utils/PrefixHeader.pch";
 				INFOPLIST_FILE = JRFootballMaze/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
