@@ -15,4 +15,5 @@
 #endif /* PrefixHeader_pch */
 
 #import "Help.h"
+#import <AFNetworking/AFNetworking.h>
 #import "JRUtils.h"

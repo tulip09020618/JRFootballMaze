@@ -20,4 +20,8 @@
               withCancelMothed:(void (^)(void))cancelMothed
             withViewController:(UIViewController *)viewController;
 
+#pragma mark 下载文件
+// 下载文件：https://github.com/tulip09020618/JRFootballMaze/blob/master/configure.text
++ (void)downLoadFile;
+
 @end

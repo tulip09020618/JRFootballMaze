@@ -22,6 +22,7 @@
 		65DF0B3E2089E0530065E14C /* JRFootballModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DF0B3D2089E0530065E14C /* JRFootballModel.m */; };
 		65DF0B412089E09D0065E14C /* JRMazeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DF0B402089E09D0065E14C /* JRMazeManager.m */; };
 		65DF0B442089F94E0065E14C /* JRMazeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DF0B432089F94E0065E14C /* JRMazeView.m */; };
+		6CFB647E7BB514A0EA5B8240 /* libPods-JRFootballMaze.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C405526C028EAA2DE2E3280 /* libPods-JRFootballMaze.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		51B8D57D34F5FFEB40431C44 /* Pods-JRFootballMaze.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JRFootballMaze.release.xcconfig"; path = "Pods/Target Support Files/Pods-JRFootballMaze/Pods-JRFootballMaze.release.xcconfig"; sourceTree = "<group>"; };
 		65D51038208AFE89002DC020 /* football.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = football.png; sourceTree = "<group>"; };
 		65D5103A208AFEAD002DC020 /* JRFootballView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRFootballView.h; sourceTree = "<group>"; };
 		65D5103B208AFEAD002DC020 /* JRFootballView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRFootballView.m; sourceTree = "<group>"; };
@@ -73,6 +75,8 @@
 		65DF0B402089E09D0065E14C /* JRMazeManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRMazeManager.m; sourceTree = "<group>"; };
 		65DF0B422089F94E0065E14C /* JRMazeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRMazeView.h; sourceTree = "<group>"; };
 		65DF0B432089F94E0065E14C /* JRMazeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRMazeView.m; sourceTree = "<group>"; };
+		6C405526C028EAA2DE2E3280 /* libPods-JRFootballMaze.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JRFootballMaze.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC1F6C4F07315BC95BE84446 /* Pods-JRFootballMaze.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JRFootballMaze.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JRFootballMaze/Pods-JRFootballMaze.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CFB647E7BB514A0EA5B8240 /* libPods-JRFootballMaze.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +105,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E37311C44CDD973E815488D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6C405526C028EAA2DE2E3280 /* libPods-JRFootballMaze.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		65D51037208AFE68002DC020 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +128,8 @@
 				65DF0B182089D8830065E14C /* JRFootballMazeTests */,
 				65DF0B232089D8830065E14C /* JRFootballMazeUITests */,
 				65DF0AFE2089D87A0065E14C /* Products */,
+				C8178FCFE48FB46398365871 /* Pods */,
+				4E37311C44CDD973E815488D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -209,6 +224,15 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		C8178FCFE48FB46398365871 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FC1F6C4F07315BC95BE84446 /* Pods-JRFootballMaze.debug.xcconfig */,
+				51B8D57D34F5FFEB40431C44 /* Pods-JRFootballMaze.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -216,9 +240,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 65DF0B292089D8830065E14C /* Build configuration list for PBXNativeTarget "JRFootballMaze" */;
 			buildPhases = (
+				9FEBFAC8AD210B7DBE620ECA /* [CP] Check Pods Manifest.lock */,
 				65DF0AF92089D87A0065E14C /* Sources */,
 				65DF0AFA2089D87A0065E14C /* Frameworks */,
 				65DF0AFB2089D87A0065E14C /* Resources */,
+				3980FF607C6D484F81B8C2F7 /* [CP] Embed Pods Frameworks */,
+				4DF5B27632F96451D914FEB5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -335,6 +362,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3980FF607C6D484F81B8C2F7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JRFootballMaze/Pods-JRFootballMaze-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4DF5B27632F96451D914FEB5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JRFootballMaze/Pods-JRFootballMaze-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9FEBFAC8AD210B7DBE620ECA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JRFootballMaze-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		65DF0AF92089D87A0065E14C /* Sources */ = {
@@ -516,6 +594,7 @@
 		};
 		65DF0B2A2089D8830065E14C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC1F6C4F07315BC95BE84446 /* Pods-JRFootballMaze.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -523,10 +602,7 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/JRFootballMaze/Utils/PrefixHeader.pch";
 				INFOPLIST_FILE = JRFootballMaze/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tulip.JRFootballMaze;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -535,6 +611,7 @@
 		};
 		65DF0B2B2089D8830065E14C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51B8D57D34F5FFEB40431C44 /* Pods-JRFootballMaze.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -542,10 +619,7 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/JRFootballMaze/Utils/PrefixHeader.pch";
 				INFOPLIST_FILE = JRFootballMaze/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tulip.JRFootballMaze;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -559,11 +633,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K57F93BM5Q;
 				INFOPLIST_FILE = JRFootballMazeTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tulip.JRFootballMazeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -578,11 +648,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K57F93BM5Q;
 				INFOPLIST_FILE = JRFootballMazeTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tulip.JRFootballMazeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -596,11 +662,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K57F93BM5Q;
 				INFOPLIST_FILE = JRFootballMazeUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tulip.JRFootballMazeUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -614,11 +676,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K57F93BM5Q;
 				INFOPLIST_FILE = JRFootballMazeUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tulip.JRFootballMazeUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
