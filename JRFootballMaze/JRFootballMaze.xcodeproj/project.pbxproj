@@ -7,9 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		65836101208C52EE00EB6F98 /* goback.png in Resources */ = {isa = PBXBuildFile; fileRef = 65836100208C52ED00EB6F98 /* goback.png */; };
+		65836103208C593200EB6F98 /* selectLevel_lock.png in Resources */ = {isa = PBXBuildFile; fileRef = 65836102208C593200EB6F98 /* selectLevel_lock.png */; };
+		65836106208C5A0600EB6F98 /* UIColor+HEX.m in Sources */ = {isa = PBXBuildFile; fileRef = 65836105208C5A0600EB6F98 /* UIColor+HEX.m */; };
+		65836109208C5C6A00EB6F98 /* JRUserDefaultsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 65836108208C5C6A00EB6F98 /* JRUserDefaultsManager.m */; };
 		65D51039208AFE89002DC020 /* football.png in Resources */ = {isa = PBXBuildFile; fileRef = 65D51038208AFE89002DC020 /* football.png */; };
 		65D5103C208AFEAD002DC020 /* JRFootballView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D5103B208AFEAD002DC020 /* JRFootballView.m */; };
 		65D51041208B230A002DC020 /* JRUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D51040208B230A002DC020 /* JRUtils.m */; };
+		65D5104E208B70EF002DC020 /* left.png in Resources */ = {isa = PBXBuildFile; fileRef = 65D5104A208B70EF002DC020 /* left.png */; };
+		65D5104F208B70EF002DC020 /* down.png in Resources */ = {isa = PBXBuildFile; fileRef = 65D5104B208B70EF002DC020 /* down.png */; };
+		65D51050208B70EF002DC020 /* right.png in Resources */ = {isa = PBXBuildFile; fileRef = 65D5104C208B70EF002DC020 /* right.png */; };
+		65D51051208B70EF002DC020 /* up.png in Resources */ = {isa = PBXBuildFile; fileRef = 65D5104D208B70EF002DC020 /* up.png */; };
+		65D51053208B76F2002DC020 /* homeBack.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65D51052208B76F2002DC020 /* homeBack.jpg */; };
+		65D51057208B79F3002DC020 /* JRSelectLevelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D51055208B79F3002DC020 /* JRSelectLevelViewController.m */; };
+		65D51058208B79F3002DC020 /* JRSelectLevelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65D51056208B79F3002DC020 /* JRSelectLevelViewController.xib */; };
+		65D5105C208B7A16002DC020 /* JRLevelDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D5105A208B7A16002DC020 /* JRLevelDetailsViewController.m */; };
+		65D5105D208B7A16002DC020 /* JRLevelDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65D5105B208B7A16002DC020 /* JRLevelDetailsViewController.xib */; };
+		65D5105F208B8044002DC020 /* selectLevel.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65D5105E208B8044002DC020 /* selectLevel.jpg */; };
+		65D51061208C469B002DC020 /* levelBack.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 65D51060208C469A002DC020 /* levelBack.jpeg */; };
+		65D51063208C480C002DC020 /* mazeBack.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 65D51062208C480B002DC020 /* mazeBack.jpeg */; };
 		65DF0B022089D87A0065E14C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DF0B012089D87A0065E14C /* AppDelegate.m */; };
 		65DF0B052089D87A0065E14C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DF0B042089D87A0065E14C /* ViewController.m */; };
 		65DF0B082089D87A0065E14C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65DF0B062089D87A0065E14C /* Main.storyboard */; };
@@ -44,6 +60,12 @@
 
 /* Begin PBXFileReference section */
 		51B8D57D34F5FFEB40431C44 /* Pods-JRFootballMaze.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JRFootballMaze.release.xcconfig"; path = "Pods/Target Support Files/Pods-JRFootballMaze/Pods-JRFootballMaze.release.xcconfig"; sourceTree = "<group>"; };
+		65836100208C52ED00EB6F98 /* goback.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = goback.png; sourceTree = "<group>"; };
+		65836102208C593200EB6F98 /* selectLevel_lock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = selectLevel_lock.png; sourceTree = "<group>"; };
+		65836104208C5A0600EB6F98 /* UIColor+HEX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HEX.h"; sourceTree = "<group>"; };
+		65836105208C5A0600EB6F98 /* UIColor+HEX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HEX.m"; sourceTree = "<group>"; };
+		65836107208C5C6A00EB6F98 /* JRUserDefaultsManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRUserDefaultsManager.h; sourceTree = "<group>"; };
+		65836108208C5C6A00EB6F98 /* JRUserDefaultsManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRUserDefaultsManager.m; sourceTree = "<group>"; };
 		65D51038208AFE89002DC020 /* football.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = football.png; sourceTree = "<group>"; };
 		65D5103A208AFEAD002DC020 /* JRFootballView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRFootballView.h; sourceTree = "<group>"; };
 		65D5103B208AFEAD002DC020 /* JRFootballView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRFootballView.m; sourceTree = "<group>"; };
@@ -51,6 +73,20 @@
 		65D5103E208B226B002DC020 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		65D5103F208B230A002DC020 /* JRUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRUtils.h; sourceTree = "<group>"; };
 		65D51040208B230A002DC020 /* JRUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRUtils.m; sourceTree = "<group>"; };
+		65D5104A208B70EF002DC020 /* left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = left.png; sourceTree = "<group>"; };
+		65D5104B208B70EF002DC020 /* down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = down.png; sourceTree = "<group>"; };
+		65D5104C208B70EF002DC020 /* right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = right.png; sourceTree = "<group>"; };
+		65D5104D208B70EF002DC020 /* up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = up.png; sourceTree = "<group>"; };
+		65D51052208B76F2002DC020 /* homeBack.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = homeBack.jpg; sourceTree = "<group>"; };
+		65D51054208B79F3002DC020 /* JRSelectLevelViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRSelectLevelViewController.h; sourceTree = "<group>"; };
+		65D51055208B79F3002DC020 /* JRSelectLevelViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRSelectLevelViewController.m; sourceTree = "<group>"; };
+		65D51056208B79F3002DC020 /* JRSelectLevelViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JRSelectLevelViewController.xib; sourceTree = "<group>"; };
+		65D51059208B7A16002DC020 /* JRLevelDetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRLevelDetailsViewController.h; sourceTree = "<group>"; };
+		65D5105A208B7A16002DC020 /* JRLevelDetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRLevelDetailsViewController.m; sourceTree = "<group>"; };
+		65D5105B208B7A16002DC020 /* JRLevelDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JRLevelDetailsViewController.xib; sourceTree = "<group>"; };
+		65D5105E208B8044002DC020 /* selectLevel.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = selectLevel.jpg; sourceTree = "<group>"; };
+		65D51060208C469A002DC020 /* levelBack.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = levelBack.jpeg; sourceTree = "<group>"; };
+		65D51062208C480B002DC020 /* mazeBack.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mazeBack.jpeg; sourceTree = "<group>"; };
 		65DF0AFD2089D87A0065E14C /* JRFootballMaze.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JRFootballMaze.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65DF0B002089D87A0065E14C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		65DF0B012089D87A0065E14C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -116,6 +152,16 @@
 		65D51037208AFE68002DC020 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				65836102208C593200EB6F98 /* selectLevel_lock.png */,
+				65836100208C52ED00EB6F98 /* goback.png */,
+				65D51062208C480B002DC020 /* mazeBack.jpeg */,
+				65D51060208C469A002DC020 /* levelBack.jpeg */,
+				65D5105E208B8044002DC020 /* selectLevel.jpg */,
+				65D51052208B76F2002DC020 /* homeBack.jpg */,
+				65D5104B208B70EF002DC020 /* down.png */,
+				65D5104A208B70EF002DC020 /* left.png */,
+				65D5104C208B70EF002DC020 /* right.png */,
+				65D5104D208B70EF002DC020 /* up.png */,
 				65D51038208AFE89002DC020 /* football.png */,
 			);
 			path = Resources;
@@ -207,6 +253,12 @@
 		65DF0B342089D90E0065E14C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				65D51054208B79F3002DC020 /* JRSelectLevelViewController.h */,
+				65D51055208B79F3002DC020 /* JRSelectLevelViewController.m */,
+				65D51056208B79F3002DC020 /* JRSelectLevelViewController.xib */,
+				65D51059208B7A16002DC020 /* JRLevelDetailsViewController.h */,
+				65D5105A208B7A16002DC020 /* JRLevelDetailsViewController.m */,
+				65D5105B208B7A16002DC020 /* JRLevelDetailsViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -214,12 +266,16 @@
 		65DF0B352089D9180065E14C /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				65836104208C5A0600EB6F98 /* UIColor+HEX.h */,
+				65836105208C5A0600EB6F98 /* UIColor+HEX.m */,
 				65DF0B3F2089E09D0065E14C /* JRMazeManager.h */,
 				65DF0B402089E09D0065E14C /* JRMazeManager.m */,
 				65D5103D208B225A002DC020 /* Help.h */,
 				65D5103E208B226B002DC020 /* PrefixHeader.pch */,
 				65D5103F208B230A002DC020 /* JRUtils.h */,
 				65D51040208B230A002DC020 /* JRUtils.m */,
+				65836107208C5C6A00EB6F98 /* JRUserDefaultsManager.h */,
+				65836108208C5C6A00EB6F98 /* JRUserDefaultsManager.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -341,9 +397,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				65DF0B0D2089D8820065E14C /* LaunchScreen.storyboard in Resources */,
+				65D5105D208B7A16002DC020 /* JRLevelDetailsViewController.xib in Resources */,
+				65D5104E208B70EF002DC020 /* left.png in Resources */,
 				65DF0B0A2089D8820065E14C /* Assets.xcassets in Resources */,
+				65D51061208C469B002DC020 /* levelBack.jpeg in Resources */,
+				65D51058208B79F3002DC020 /* JRSelectLevelViewController.xib in Resources */,
 				65D51039208AFE89002DC020 /* football.png in Resources */,
+				65836103208C593200EB6F98 /* selectLevel_lock.png in Resources */,
 				65DF0B082089D87A0065E14C /* Main.storyboard in Resources */,
+				65D5104F208B70EF002DC020 /* down.png in Resources */,
+				65D51063208C480C002DC020 /* mazeBack.jpeg in Resources */,
+				65D51053208B76F2002DC020 /* homeBack.jpg in Resources */,
+				65D51051208B70EF002DC020 /* up.png in Resources */,
+				65D5105F208B8044002DC020 /* selectLevel.jpg in Resources */,
+				65D51050208B70EF002DC020 /* right.png in Resources */,
+				65836101208C52EE00EB6F98 /* goback.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,14 +488,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				65DF0B3E2089E0530065E14C /* JRFootballModel.m in Sources */,
+				65836106208C5A0600EB6F98 /* UIColor+HEX.m in Sources */,
 				65DF0B052089D87A0065E14C /* ViewController.m in Sources */,
 				65D51041208B230A002DC020 /* JRUtils.m in Sources */,
 				65DF0B442089F94E0065E14C /* JRMazeView.m in Sources */,
 				65DF0B102089D8820065E14C /* main.m in Sources */,
 				65DF0B3B2089D9890065E14C /* JRMazeCellModel.m in Sources */,
 				65D5103C208AFEAD002DC020 /* JRFootballView.m in Sources */,
+				65D51057208B79F3002DC020 /* JRSelectLevelViewController.m in Sources */,
 				65DF0B412089E09D0065E14C /* JRMazeManager.m in Sources */,
+				65836109208C5C6A00EB6F98 /* JRUserDefaultsManager.m in Sources */,
 				65DF0B022089D87A0065E14C /* AppDelegate.m in Sources */,
+				65D5105C208B7A16002DC020 /* JRLevelDetailsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -602,7 +674,10 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/JRFootballMaze/Utils/PrefixHeader.pch";
 				INFOPLIST_FILE = JRFootballMaze/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tulip.JRFootballMaze;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -619,7 +694,10 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/JRFootballMaze/Utils/PrefixHeader.pch";
 				INFOPLIST_FILE = JRFootballMaze/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tulip.JRFootballMaze;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -633,7 +711,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K57F93BM5Q;
 				INFOPLIST_FILE = JRFootballMazeTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tulip.JRFootballMazeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -648,7 +730,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K57F93BM5Q;
 				INFOPLIST_FILE = JRFootballMazeTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tulip.JRFootballMazeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -662,7 +748,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K57F93BM5Q;
 				INFOPLIST_FILE = JRFootballMazeUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tulip.JRFootballMazeUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -676,7 +766,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K57F93BM5Q;
 				INFOPLIST_FILE = JRFootballMazeUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tulip.JRFootballMazeUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";

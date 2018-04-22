@@ -16,4 +16,6 @@
 
 #import "Help.h"
 #import <AFNetworking/AFNetworking.h>
+#import "UIColor+HEX.h"
 #import "JRUtils.h"
+#import "JRUserDefaultsManager.h"

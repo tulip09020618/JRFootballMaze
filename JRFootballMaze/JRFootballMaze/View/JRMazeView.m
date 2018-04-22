@@ -15,14 +15,14 @@
     //一个不透明类型的Quartz 2D绘画环境,相当于一个画布,你可以在上面任意绘画
     CGContextRef context = UIGraphicsGetCurrentContext();
     
-    //设置填充颜色
-    CGContextSetFillColorWithColor(context, [UIColor blackColor].CGColor);
+    // 设置画笔颜色
+    CGContextSetStrokeColorWithColor(context, [UIColor whiteColor].CGColor);
     
     // 指定直线样式
     CGContextSetLineCap(context, kCGLineCapButt);
     
     // 设置直线宽度
-    CGContextSetLineWidth(context, 1.0);
+    CGContextSetLineWidth(context, 2.0);
     
     // 开始绘制
     CGContextBeginPath(context);

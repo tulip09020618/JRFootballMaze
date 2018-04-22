@@ -18,86 +18,48 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nrq-xm-bhl">
-                                <rect key="frame" x="172" y="487" width="31" height="30"/>
-                                <state key="normal" title="重置"/>
-                                <connections>
-                                    <action selector="reSet:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nQC-2V-43k"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ozi-9G-2Un">
-                                <rect key="frame" x="147" y="607" width="80" height="40"/>
-                                <color key="backgroundColor" red="1" green="0.37254901959999998" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="L6W-YR-xbK"/>
-                                    <constraint firstAttribute="width" constant="80" id="ob2-V9-rNx"/>
-                                </constraints>
-                                <state key="normal" title="下">
+                            <imageView userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homeBack.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="3v7-2w-IHn">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="足球迷宫" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z1B-Me-FOV">
+                                <rect key="frame" x="103.5" y="120" width="169.5" height="50.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="42"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5jn-jd-Wa8">
+                                <rect key="frame" x="130.5" y="290.5" width="114" height="46"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <state key="normal" title="闯关模式">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="move:" destination="BYZ-38-t0r" eventType="touchDown" id="kDT-1I-nFs"/>
-                                    <action selector="stop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cC2-s6-hli"/>
+                                    <action selector="levelMode:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HKb-kd-zn3"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dlw-Sc-Gtw">
-                                <rect key="frame" x="147" y="537" width="80" height="40"/>
-                                <color key="backgroundColor" red="1" green="0.37254901959999998" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="80" id="T4b-7A-uox"/>
-                                    <constraint firstAttribute="height" constant="40" id="t9u-vu-Xf4"/>
-                                </constraints>
-                                <state key="normal" title="上">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TJC-fi-o85">
+                                <rect key="frame" x="130" y="357" width="114" height="46"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <state key="normal" title="随机模式">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="move:" destination="BYZ-38-t0r" eventType="touchDown" id="RbK-YQ-J5f"/>
-                                    <action selector="stop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0kQ-Nn-nbR"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yIx-BS-uGn">
-                                <rect key="frame" x="37" y="567" width="80" height="40"/>
-                                <color key="backgroundColor" red="1" green="0.37254901959999998" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="hSE-IL-UEM"/>
-                                    <constraint firstAttribute="width" constant="80" id="o3j-re-hLo"/>
-                                </constraints>
-                                <state key="normal" title="左">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="move:" destination="BYZ-38-t0r" eventType="touchDown" id="Uvt-fE-yz8"/>
-                                    <action selector="stop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IT4-Wc-mR1"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eop-SL-9eM">
-                                <rect key="frame" x="257" y="567" width="80" height="40"/>
-                                <color key="backgroundColor" red="1" green="0.37254901959999998" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="mX6-r5-7XN"/>
-                                    <constraint firstAttribute="width" constant="80" id="w2g-30-6wL"/>
-                                </constraints>
-                                <state key="normal" title="右">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="move:" destination="BYZ-38-t0r" eventType="touchDown" id="xvi-OJ-Teh"/>
-                                    <action selector="stop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xuK-wZ-Lfa"/>
+                                    <action selector="randomMode:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hXf-Re-Pk6"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.33725490200000002" green="0.33725490200000002" blue="0.33725490200000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="ozi-9G-2Un" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IKY-pl-91K"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Nrq-xm-bhl" secondAttribute="bottom" constant="150" id="MwF-e0-jAf"/>
-                            <constraint firstItem="Dlw-Sc-Gtw" firstAttribute="leading" secondItem="yIx-BS-uGn" secondAttribute="trailing" constant="30" id="YGW-Xk-Rz1"/>
-                            <constraint firstItem="eop-SL-9eM" firstAttribute="leading" secondItem="Dlw-Sc-Gtw" secondAttribute="trailing" constant="30" id="bqO-Lb-Gfw"/>
-                            <constraint firstItem="Dlw-Sc-Gtw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cGl-hr-RCh"/>
-                            <constraint firstItem="eop-SL-9eM" firstAttribute="centerY" secondItem="yIx-BS-uGn" secondAttribute="centerY" id="edZ-yN-DX2"/>
-                            <constraint firstItem="Dlw-Sc-Gtw" firstAttribute="centerY" secondItem="yIx-BS-uGn" secondAttribute="centerY" constant="-30" id="exy-o8-7g3"/>
-                            <constraint firstItem="ozi-9G-2Un" firstAttribute="top" secondItem="Dlw-Sc-Gtw" secondAttribute="bottom" constant="30" id="f3D-lF-ha7"/>
-                            <constraint firstItem="Nrq-xm-bhl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jR1-ih-dmT"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ozi-9G-2Un" secondAttribute="bottom" constant="20" id="vaQ-DQ-Kms"/>
+                            <constraint firstItem="z1B-Me-FOV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0uP-kj-NC5"/>
+                            <constraint firstItem="z1B-Me-FOV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="0zv-rA-o5r"/>
+                            <constraint firstItem="3v7-2w-IHn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="3GF-cH-nkr"/>
+                            <constraint firstItem="3v7-2w-IHn" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="5v7-1m-za8"/>
+                            <constraint firstItem="5jn-jd-Wa8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DMy-dE-Yc6"/>
+                            <constraint firstAttribute="trailing" secondItem="3v7-2w-IHn" secondAttribute="trailing" id="Fw5-NJ-ymd"/>
+                            <constraint firstItem="5jn-jd-Wa8" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-20" id="GzL-kG-Ton"/>
+                            <constraint firstItem="TJC-fi-o85" firstAttribute="top" secondItem="5jn-jd-Wa8" secondAttribute="bottom" constant="20" id="PhU-px-EZN"/>
+                            <constraint firstItem="TJC-fi-o85" firstAttribute="centerX" secondItem="5jn-jd-Wa8" secondAttribute="centerX" id="i9U-tJ-Jx7"/>
+                            <constraint firstAttribute="bottom" secondItem="3v7-2w-IHn" secondAttribute="bottom" id="kTw-5x-ajx"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -106,4 +68,7 @@
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="homeBack.jpg" width="1080" height="1920"/>
+    </resources>
 </document>

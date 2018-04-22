@@ -209,12 +209,12 @@ static JRMazeManager *mazeManager = nil;
     CGFloat viewW = self.space * self.cols;
     CGFloat viewH = self.space * self.rows;
     
-    JRMazeView *mazeView = [[JRMazeView alloc] initWithFrame:CGRectMake(10, 100, viewW, viewH)];
+    JRMazeView *mazeView = [[JRMazeView alloc] initWithFrame:CGRectMake(0, 0, viewW, viewH)];
     mazeView.rows = self.rows;
     mazeView.cols = self.cols;
     mazeView.space = self.space;
     mazeView.mazeCells = self.mazeCells;
-    mazeView.backgroundColor = [UIColor whiteColor];
+    mazeView.backgroundColor = [UIColor clearColor];
     
     // 生成足球，放在迷宫图上
     JRFootballView *footballView = [self generateFootball];
@@ -339,6 +339,16 @@ static JRMazeManager *mazeManager = nil;
     
     // 获取足球所在行列的cellModel
     JRMazeCellModel *cell = self.mazeCells[index];
+    
+    if (cell.row == self.rows - 1 && cell.col == self.cols -1) {
+        // 通关
+        self.successful = YES;
+        if (self.success) {
+            self.success();
+        }
+        return;
+    }
+    
     if (cell.canDown && cell.row != self.rows - 1) {
         [self.football moveToDown];
     }
