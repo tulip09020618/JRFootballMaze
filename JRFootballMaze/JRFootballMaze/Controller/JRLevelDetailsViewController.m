@@ -37,15 +37,19 @@
 
 @implementation JRLevelDetailsViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+- (void)viewDidLayoutSubviews {
+    [super viewDidLayoutSubviews];
     
     if (self.type == MODE_TYPE_LEVEL) {
         [self createUIWithLevel];
     }else {
         [self createUIWithRandom];
     }
+}
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // Do any additional setup after loading the view from its nib.
     
     [JRMazeManager manager].success = ^{
         // 通关
@@ -59,6 +63,11 @@
 }
 
 - (void)createUIWithLevel {
+    
+    if (self.mazeView != nil) {
+        [self.mazeView removeFromSuperview];
+    }
+    
     self.titleLabel.text = [NSString stringWithFormat:@"第%ld关", self.levelIndex + 1];
     
     // 生成迷宫
@@ -96,6 +105,10 @@
 }
 
 - (void)createUIWithRandom {
+    if (self.mazeView != nil) {
+        [self.mazeView removeFromSuperview];
+    }
+    
     self.titleLabel.text = @"随机模式";
     
     // 生成迷宫
