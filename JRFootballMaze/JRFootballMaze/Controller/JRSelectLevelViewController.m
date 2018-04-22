@@ -107,6 +107,7 @@ static NSInteger levelCount = 30;
     NSInteger levelIndex = btn.tag - 200;
     
     JRLevelDetailsViewController *detailsVC = [[JRLevelDetailsViewController alloc] initWithNibName:@"JRLevelDetailsViewController" bundle:nil];
+    detailsVC.type = MODE_TYPE_LEVEL;
     detailsVC.levelIndex = levelIndex;
     __weak typeof(self) weakSelf = self;
     detailsVC.success = ^(NSInteger levelIndex) {

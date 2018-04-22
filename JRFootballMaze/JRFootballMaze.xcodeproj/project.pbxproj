@@ -11,6 +11,9 @@
 		65836103208C593200EB6F98 /* selectLevel_lock.png in Resources */ = {isa = PBXBuildFile; fileRef = 65836102208C593200EB6F98 /* selectLevel_lock.png */; };
 		65836106208C5A0600EB6F98 /* UIColor+HEX.m in Sources */ = {isa = PBXBuildFile; fileRef = 65836105208C5A0600EB6F98 /* UIColor+HEX.m */; };
 		65836109208C5C6A00EB6F98 /* JRUserDefaultsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 65836108208C5C6A00EB6F98 /* JRUserDefaultsManager.m */; };
+		65836110208C95F400EB6F98 /* JRRulesIntroductionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6583610E208C95F400EB6F98 /* JRRulesIntroductionViewController.m */; };
+		65836111208C95F400EB6F98 /* JRRulesIntroductionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6583610F208C95F400EB6F98 /* JRRulesIntroductionViewController.xib */; };
+		65836113208C9C4900EB6F98 /* help.png in Resources */ = {isa = PBXBuildFile; fileRef = 65836112208C9C4900EB6F98 /* help.png */; };
 		65D51039208AFE89002DC020 /* football.png in Resources */ = {isa = PBXBuildFile; fileRef = 65D51038208AFE89002DC020 /* football.png */; };
 		65D5103C208AFEAD002DC020 /* JRFootballView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D5103B208AFEAD002DC020 /* JRFootballView.m */; };
 		65D51041208B230A002DC020 /* JRUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D51040208B230A002DC020 /* JRUtils.m */; };
@@ -66,6 +69,10 @@
 		65836105208C5A0600EB6F98 /* UIColor+HEX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HEX.m"; sourceTree = "<group>"; };
 		65836107208C5C6A00EB6F98 /* JRUserDefaultsManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRUserDefaultsManager.h; sourceTree = "<group>"; };
 		65836108208C5C6A00EB6F98 /* JRUserDefaultsManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRUserDefaultsManager.m; sourceTree = "<group>"; };
+		6583610D208C95F400EB6F98 /* JRRulesIntroductionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRRulesIntroductionViewController.h; sourceTree = "<group>"; };
+		6583610E208C95F400EB6F98 /* JRRulesIntroductionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRRulesIntroductionViewController.m; sourceTree = "<group>"; };
+		6583610F208C95F400EB6F98 /* JRRulesIntroductionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JRRulesIntroductionViewController.xib; sourceTree = "<group>"; };
+		65836112208C9C4900EB6F98 /* help.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = help.png; sourceTree = "<group>"; };
 		65D51038208AFE89002DC020 /* football.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = football.png; sourceTree = "<group>"; };
 		65D5103A208AFEAD002DC020 /* JRFootballView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRFootballView.h; sourceTree = "<group>"; };
 		65D5103B208AFEAD002DC020 /* JRFootballView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRFootballView.m; sourceTree = "<group>"; };
@@ -152,6 +159,7 @@
 		65D51037208AFE68002DC020 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				65836112208C9C4900EB6F98 /* help.png */,
 				65836102208C593200EB6F98 /* selectLevel_lock.png */,
 				65836100208C52ED00EB6F98 /* goback.png */,
 				65D51062208C480B002DC020 /* mazeBack.jpeg */,
@@ -259,6 +267,9 @@
 				65D51059208B7A16002DC020 /* JRLevelDetailsViewController.h */,
 				65D5105A208B7A16002DC020 /* JRLevelDetailsViewController.m */,
 				65D5105B208B7A16002DC020 /* JRLevelDetailsViewController.xib */,
+				6583610D208C95F400EB6F98 /* JRRulesIntroductionViewController.h */,
+				6583610E208C95F400EB6F98 /* JRRulesIntroductionViewController.m */,
+				6583610F208C95F400EB6F98 /* JRRulesIntroductionViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -398,6 +409,7 @@
 			files = (
 				65DF0B0D2089D8820065E14C /* LaunchScreen.storyboard in Resources */,
 				65D5105D208B7A16002DC020 /* JRLevelDetailsViewController.xib in Resources */,
+				65836113208C9C4900EB6F98 /* help.png in Resources */,
 				65D5104E208B70EF002DC020 /* left.png in Resources */,
 				65DF0B0A2089D8820065E14C /* Assets.xcassets in Resources */,
 				65D51061208C469B002DC020 /* levelBack.jpeg in Resources */,
@@ -408,6 +420,7 @@
 				65D5104F208B70EF002DC020 /* down.png in Resources */,
 				65D51063208C480C002DC020 /* mazeBack.jpeg in Resources */,
 				65D51053208B76F2002DC020 /* homeBack.jpg in Resources */,
+				65836111208C95F400EB6F98 /* JRRulesIntroductionViewController.xib in Resources */,
 				65D51051208B70EF002DC020 /* up.png in Resources */,
 				65D5105F208B8044002DC020 /* selectLevel.jpg in Resources */,
 				65D51050208B70EF002DC020 /* right.png in Resources */,
@@ -491,6 +504,7 @@
 				65836106208C5A0600EB6F98 /* UIColor+HEX.m in Sources */,
 				65DF0B052089D87A0065E14C /* ViewController.m in Sources */,
 				65D51041208B230A002DC020 /* JRUtils.m in Sources */,
+				65836110208C95F400EB6F98 /* JRRulesIntroductionViewController.m in Sources */,
 				65DF0B442089F94E0065E14C /* JRMazeView.m in Sources */,
 				65DF0B102089D8820065E14C /* main.m in Sources */,
 				65DF0B3B2089D9890065E14C /* JRMazeCellModel.m in Sources */,

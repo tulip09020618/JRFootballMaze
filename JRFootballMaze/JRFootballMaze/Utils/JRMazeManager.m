@@ -254,6 +254,12 @@ static JRMazeManager *mazeManager = nil;
     
     // 获取足球所在行列的cellModel
     JRMazeCellModel *cell = self.mazeCells[index];
+    
+    if (cell.row == self.rows - 1 && cell.col == self.cols -1) {
+        // 通关
+        return;
+    }
+    
     if (cell.canLeft && cell.col != 0) {
         [self.football moveToLeft];
     }
@@ -279,6 +285,12 @@ static JRMazeManager *mazeManager = nil;
     
     // 获取足球所在行列的cellModel
     JRMazeCellModel *cell = self.mazeCells[index];
+    
+    if (cell.row == self.rows - 1 && cell.col == self.cols -1) {
+        // 通关
+        return;
+    }
+    
     if (cell.canUp && cell.row != 0) {
         [self.football moveToUp];
     }
@@ -305,17 +317,22 @@ static JRMazeManager *mazeManager = nil;
     // 获取足球所在行列的cellModel
     JRMazeCellModel *cell = self.mazeCells[index];
     
-    if (cell.row == self.rows - 1 && cell.col == self.cols -1) {
+    if (cell.row == self.rows - 1 && cell.col == self.cols - 1) {
         // 通关
-        self.successful = YES;
-        if (self.success) {
-            self.success();
-        }
         return;
     }
     
     if (cell.canRight && cell.col != self.cols - 1) {
         [self.football moveToRight];
+        // 移动后判断是否已通过
+        if (cell.row == self.rows - 1 && cell.col == self.cols - 2) {
+            // 通关
+            self.successful = YES;
+            if (self.success) {
+                self.success();
+            }
+            return;
+        }
     }
 }
 
@@ -342,15 +359,20 @@ static JRMazeManager *mazeManager = nil;
     
     if (cell.row == self.rows - 1 && cell.col == self.cols -1) {
         // 通关
-        self.successful = YES;
-        if (self.success) {
-            self.success();
-        }
         return;
     }
     
     if (cell.canDown && cell.row != self.rows - 1) {
         [self.football moveToDown];
+        
+        if (cell.row == self.rows - 2 && cell.col == self.cols -1) {
+            // 通关
+            self.successful = YES;
+            if (self.success) {
+                self.success();
+            }
+            return;
+        }
     }
 }
 

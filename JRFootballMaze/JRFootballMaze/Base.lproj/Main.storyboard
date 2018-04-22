@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="足球迷宫" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z1B-Me-FOV">
-                                <rect key="frame" x="103.5" y="120" width="169.5" height="50.5"/>
+                                <rect key="frame" x="103" y="120" width="169.5" height="50.5"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="42"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -47,13 +47,25 @@
                                     <action selector="randomMode:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hXf-Re-Pk6"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EKL-ON-tuj">
+                                <rect key="frame" x="130.5" y="423" width="114" height="46"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <state key="normal" title="规则介绍">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="rulesIntroduction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Usk-Xl-FAG"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.33725490200000002" green="0.33725490200000002" blue="0.33725490200000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="z1B-Me-FOV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0uP-kj-NC5"/>
                             <constraint firstItem="z1B-Me-FOV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="0zv-rA-o5r"/>
+                            <constraint firstItem="EKL-ON-tuj" firstAttribute="top" secondItem="TJC-fi-o85" secondAttribute="bottom" constant="20" id="2nt-eQ-1P0"/>
                             <constraint firstItem="3v7-2w-IHn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="3GF-cH-nkr"/>
                             <constraint firstItem="3v7-2w-IHn" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="5v7-1m-za8"/>
+                            <constraint firstItem="EKL-ON-tuj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9TQ-BZ-ukb"/>
                             <constraint firstItem="5jn-jd-Wa8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DMy-dE-Yc6"/>
                             <constraint firstAttribute="trailing" secondItem="3v7-2w-IHn" secondAttribute="trailing" id="Fw5-NJ-ymd"/>
                             <constraint firstItem="5jn-jd-Wa8" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-20" id="GzL-kG-Ton"/>
