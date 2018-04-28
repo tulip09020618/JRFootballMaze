@@ -21,10 +21,6 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    // 下载文件
-    [JRUtils downLoadFile];
-    
-    
 }
 
 #pragma mark 闯关模式
