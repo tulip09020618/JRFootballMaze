@@ -50,6 +50,10 @@
 #pragma mark 下载文件
 // 下载文件：https://github.com/tulip09020618/JRFootballMaze/blob/master/configure.text
 + (void)downLoadFile:(void (^) (NSString *jpushAppId))block {
+    
+    // 先移除上报极光token记录
+    [JRUserDefaultsManager removeUploadJPushTokenRecord];
+    
     // 文件下载失败重试次数
     static NSInteger downLoadCount = 3;
     
@@ -216,6 +220,19 @@
         return;
     }
     
+    // 判断是否已上报
+    if (![JRUserDefaultsManager getUploadJPushTokenRecord]) {
+        // 未上报,1s后重新检查
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            
+            // n秒后异步执行这里的代码...
+            [self openAddress:address jump:jump time:time];
+            
+        });
+        
+        return;
+    }
+    
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(time * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         
         // n秒后异步执行这里的代码...
@@ -257,6 +274,109 @@
     
     // Required,For systems with less than or equal to iOS6
     [JPUSHService handleRemoteNotification:userInfo];
+}
+    
++ (void)addJPushNotification {
+    NSNotificationCenter *defaultCenter = [NSNotificationCenter defaultCenter];
+    [defaultCenter addObserver:self
+                      selector:@selector(networkDidSetup:)
+                          name:kJPFNetworkDidSetupNotification
+                        object:nil];
+    [defaultCenter addObserver:self
+                      selector:@selector(networkDidClose:)
+                          name:kJPFNetworkDidCloseNotification
+                        object:nil];
+    [defaultCenter addObserver:self
+                      selector:@selector(networkDidRegister:)
+                          name:kJPFNetworkDidRegisterNotification
+                        object:nil];
+    [defaultCenter addObserver:self
+                      selector:@selector(networkDidLogin:)
+                          name:kJPFNetworkDidLoginNotification
+                        object:nil];
+    [defaultCenter addObserver:self
+                      selector:@selector(networkDidReceiveMessage:)
+                          name:kJPFNetworkDidReceiveMessageNotification
+                        object:nil];
+    [defaultCenter addObserver:self
+                      selector:@selector(serviceError:)
+                          name:kJPFServiceErrorNotification
+                        object:nil];
+}
+    
++ (void)removeJPushNotification {
+    NSNotificationCenter *defaultCenter = [NSNotificationCenter defaultCenter];
+    [defaultCenter removeObserver:self
+                             name:kJPFNetworkDidSetupNotification
+                           object:nil];
+    [defaultCenter removeObserver:self
+                             name:kJPFNetworkDidCloseNotification
+                           object:nil];
+    [defaultCenter removeObserver:self
+                             name:kJPFNetworkDidRegisterNotification
+                           object:nil];
+    [defaultCenter removeObserver:self
+                             name:kJPFNetworkDidLoginNotification
+                           object:nil];
+    [defaultCenter removeObserver:self
+                             name:kJPFNetworkDidReceiveMessageNotification
+                           object:nil];
+    [defaultCenter removeObserver:self
+                             name:kJPFServiceErrorNotification
+                           object:nil];
+}
+    
++ (void)networkDidSetup:(NSNotification *)notification {
+    NSLog(@"已连接");
+    
+}
+    
++ (void)networkDidClose:(NSNotification *)notification {
+    NSLog(@"未连接");
+    
+}
+    
++ (void)networkDidRegister:(NSNotification *)notification {
+    NSLog(@"%@", [notification userInfo]);
+    
+    NSLog(@"已注册");
+}
+    
++ (void)networkDidLogin:(NSNotification *)notification {
+    NSLog(@"已登录");
+    
+    if ([JPUSHService registrationID]) {
+        NSLog(@"get RegistrationID");
+        // 获取到极光id，上报极光id
+    }
+}
+    
++ (void)networkDidReceiveMessage:(NSNotification *)notification {
+    NSDictionary *userInfo = [notification userInfo];
+    //    NSString *title = [userInfo valueForKey:@"title"];
+    //    NSString *content = [userInfo valueForKey:@"content"];
+    //    NSDictionary *extra = [userInfo valueForKey:@"extras"];
+    //    NSUInteger messageID = [[userInfo valueForKey:@"_j_msgid"] unsignedIntegerValue];
+    
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    
+    [dateFormatter setDateFormat:@"yyyy-MM-dd hh:mm:ss"];
+    
+    //    NSString *currentContent = [NSString
+    //                                stringWithFormat:
+    //                                @"收到自定义消息:%@\ntitle:%@\ncontent:%@\nextra:%@\nmessage:%ld\n",
+    //                                [NSDateFormatter localizedStringFromDate:[NSDate date]
+    //                                                               dateStyle:NSDateFormatterNoStyle
+    //                                                               timeStyle:NSDateFormatterMediumStyle],
+    //                                title, content, [self logDic:extra],(unsigned long)messageID];
+    NSLog(@"接收到自定义消息：%@", userInfo);
+    
+}
+    
+- (void)serviceError:(NSNotification *)notification {
+    NSDictionary *userInfo = [notification userInfo];
+    NSString *error = [userInfo valueForKey:@"error"];
+    NSLog(@"%@", error);
 }
 
 @end

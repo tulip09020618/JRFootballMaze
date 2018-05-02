@@ -27,7 +27,6 @@
     
     // 下载文件
     [JRUtils downLoadFile:^(NSString *jpushAppId) {
-        NSLog(@"更新极光id");
         [self configJPush:jpushAppId];
     }];
     
@@ -74,6 +73,11 @@
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
     // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
+    
+    // 下载文件
+    [JRUtils downLoadFile:^(NSString *jpushAppId) {
+        [self configJPush:jpushAppId];
+    }];
 }
 
 
@@ -89,7 +93,8 @@
     
 - (void)application:(UIApplication *)application
 didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
-    
+    NSLog(@"------------注册 DeviceToken-----------");
+    [JRUserDefaultsManager saveUploadJPushTokenRecord];
     /// Required - 注册 DeviceToken
     [JPUSHService registerDeviceToken:deviceToken];
 }
