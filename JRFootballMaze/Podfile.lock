@@ -14,13 +14,19 @@ PODS:
   - AFNetworking/Serialization (3.2.0)
   - AFNetworking/UIKit (3.2.0):
     - AFNetworking/NSURLSession
+  - JCore (1.1.7)
+  - JPush (3.0.8):
+    - JCore (~> 1.1.7)
 
 DEPENDENCIES:
   - AFNetworking
+  - JPush
 
 SPEC CHECKSUMS:
   AFNetworking: 8ac6017b94ea105479f7776e5288e48ae9c59bb4
+  JCore: f7459c81c135281a874a6beafdd321666adcc834
+  JPush: 9574d072cc37e93fa293ba69b43ce763c440943a
 
-PODFILE CHECKSUM: 526445c6e3865047643dd9500aaba4f33dfcb178
+PODFILE CHECKSUM: 9aefe82d5179f5db33f99b132a78e7a6863cce76
 
 COCOAPODS: 1.4.0

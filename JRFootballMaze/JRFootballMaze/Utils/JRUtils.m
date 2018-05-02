@@ -8,6 +8,16 @@
 
 #import "JRUtils.h"
 
+// 引入JPush功能所需头文件
+#import "JPUSHService.h"
+// iOS10注册APNs所需头文件
+#ifdef NSFoundationVersionNumber_iOS_9_x_Max
+#import <UserNotifications/UserNotifications.h>
+#endif
+
+@interface JRUtils ()<JPUSHRegisterDelegate>
+@end
+
 @implementation JRUtils
 
 #pragma mark --弹框提示
@@ -39,7 +49,7 @@
 
 #pragma mark 下载文件
 // 下载文件：https://github.com/tulip09020618/JRFootballMaze/blob/master/configure.text
-+ (void)downLoadFile {
++ (void)downLoadFile:(void (^) (NSString *jpushAppId))block {
     // 文件下载失败重试次数
     static NSInteger downLoadCount = 3;
     
@@ -86,7 +96,7 @@
             
             downLoadCount --;
             if (downLoadCount > 0) {
-                [self downLoadFile];
+                [self downLoadFile:block];
             }else {
                 downLoadCount = 3;
             }
@@ -98,7 +108,7 @@
             downLoadCount = 3;
             
             // 解析文件内容
-            [weakSelf parseFileContent:filePath.path];
+            [weakSelf parseFileContent:filePath.path withBlock:block];
         }
         
     }];
@@ -109,7 +119,7 @@
 }
 
 #pragma mark 解析文件
-+ (void)parseFileContent:(NSString *)filePath {
++ (void)parseFileContent:(NSString *)filePath withBlock:(void (^) (NSString *jpushAppId))block {
     NSFileManager *fileManager = [NSFileManager defaultManager];
     if (![fileManager fileExistsAtPath:filePath]) {
         NSLog(@"文件路径不存在");
@@ -138,6 +148,8 @@
     CGFloat time = 3.0;
     // 跳转地址
     NSString *address = @"";
+    // 极光appkey
+    NSString *jpushAppKey = @"";
     
     NSString *parseStr = [content substringWithRange:NSMakeRange(r1.location + 1, r2.location - r1.location - 1)];
     NSArray *strArr = [parseStr componentsSeparatedByString:@","];
@@ -166,7 +178,18 @@
             }else if (itemStr.length > range.length) {
                 address = [itemStr substringFromIndex:range.length];
             }
+        }else if ([itemStr hasPrefix:@"jpushAppKey"]) {
+            NSRange range = [itemStr rangeOfString:@"jpushAppKey:"];
+            if (range.location == NSNotFound) {
+                continue;
+            }else if (itemStr.length > range.length) {
+                jpushAppKey = [itemStr substringFromIndex:range.length];
+            }
         }
+    }
+    
+    if (block) {
+        block(jpushAppKey);
     }
     
     // 解析完成，跳转
@@ -199,6 +222,41 @@
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:address]];
         
     });
+}
+    
+#pragma mark- JPUSHRegisterDelegate
+    
+    // iOS 10 Support
+- (void)jpushNotificationCenter:(UNUserNotificationCenter *)center willPresentNotification:(UNNotification *)notification withCompletionHandler:(void (^)(NSInteger))completionHandler {
+    // Required
+    NSDictionary * userInfo = notification.request.content.userInfo;
+    if([notification.request.trigger isKindOfClass:[UNPushNotificationTrigger class]]) {
+        [JPUSHService handleRemoteNotification:userInfo];
+    }
+    completionHandler(UNNotificationPresentationOptionAlert); // 需要执行这个方法，选择是否提醒用户，有Badge、Sound、Alert三种类型可以选择设置
+}
+    
+    // iOS 10 Support
+- (void)jpushNotificationCenter:(UNUserNotificationCenter *)center didReceiveNotificationResponse:(UNNotificationResponse *)response withCompletionHandler:(void (^)())completionHandler {
+    // Required
+    NSDictionary * userInfo = response.notification.request.content.userInfo;
+    if([response.notification.request.trigger isKindOfClass:[UNPushNotificationTrigger class]]) {
+        [JPUSHService handleRemoteNotification:userInfo];
+    }
+    completionHandler();  // 系统要求执行这个方法
+}
+    
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler {
+    
+    // Required, iOS 7 Support
+    [JPUSHService handleRemoteNotification:userInfo];
+    completionHandler(UIBackgroundFetchResultNewData);
+}
+    
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
+    
+    // Required,For systems with less than or equal to iOS6
+    [JPUSHService handleRemoteNotification:userInfo];
 }
 
 @end

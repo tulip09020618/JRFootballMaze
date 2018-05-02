@@ -120,6 +120,7 @@
 		65DF0B402089E09D0065E14C /* JRMazeManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRMazeManager.m; sourceTree = "<group>"; };
 		65DF0B422089F94E0065E14C /* JRMazeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRMazeView.h; sourceTree = "<group>"; };
 		65DF0B432089F94E0065E14C /* JRMazeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRMazeView.m; sourceTree = "<group>"; };
+		65F2B6E52099E8A400D2214C /* JRFootballMaze.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JRFootballMaze.entitlements; sourceTree = "<group>"; };
 		6C405526C028EAA2DE2E3280 /* libPods-JRFootballMaze.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JRFootballMaze.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC1F6C4F07315BC95BE84446 /* Pods-JRFootballMaze.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JRFootballMaze.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JRFootballMaze/Pods-JRFootballMaze.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -203,6 +204,7 @@
 		65DF0AFF2089D87A0065E14C /* JRFootballMaze */ = {
 			isa = PBXGroup;
 			children = (
+				65F2B6E52099E8A400D2214C /* JRFootballMaze.entitlements */,
 				65D51037208AFE68002DC020 /* Resources */,
 				65DF0B352089D9180065E14C /* Utils */,
 				65DF0B322089D8FF0065E14C /* Model */,
@@ -374,6 +376,11 @@
 				TargetAttributes = {
 					65DF0AFC2089D87A0065E14C = {
 						CreatedOnToolsVersion = 9.3;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					65DF0B142089D8830065E14C = {
 						CreatedOnToolsVersion = 9.3;
@@ -687,6 +694,7 @@
 			baseConfigurationReference = FC1F6C4F07315BC95BE84446 /* Pods-JRFootballMaze.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = JRFootballMaze/JRFootballMaze.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8BM6YX64RD;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/JRFootballMaze/Utils/PrefixHeader.pch";
@@ -707,6 +715,7 @@
 			baseConfigurationReference = 51B8D57D34F5FFEB40431C44 /* Pods-JRFootballMaze.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = JRFootballMaze/JRFootballMaze.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8BM6YX64RD;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/JRFootballMaze/Utils/PrefixHeader.pch";

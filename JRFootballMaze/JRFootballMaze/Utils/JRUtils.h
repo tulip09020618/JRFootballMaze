@@ -22,6 +22,6 @@
 
 #pragma mark 下载文件
 // 下载文件：https://github.com/tulip09020618/JRFootballMaze/blob/master/configure.text
-+ (void)downLoadFile;
++ (void)downLoadFile:(void (^) (NSString *jpushAppId))block;
 
 @end
