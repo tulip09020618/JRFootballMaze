@@ -12,7 +12,7 @@
 // 每个关卡间的距离
 static CGFloat space = 10;
 // 关卡总数量
-static NSInteger levelCount = 30;
+static NSInteger levelCount = 50;
 
 @interface JRSelectLevelViewController ()
 
