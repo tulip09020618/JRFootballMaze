@@ -47,9 +47,6 @@
     // 先移除上报极光token记录
     [JRUserDefaultsManager removeUploadJPushTokenRecord];
     
-    // 文件下载失败重试次数
-    static NSInteger downLoadCount = 3;
-    
     // 文件路径
     NSString *filePath = @"https://footballmaze-1256547180.cos.ap-beijing.myqcloud.com/configure.txt";
     
@@ -91,18 +88,16 @@
             NSLog(NSLocalizedString(@"文件下载失败：%@", nil), error);
             //文件下载失败
             
-            downLoadCount --;
-            if (downLoadCount > 0) {
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                
+                // n秒后异步执行这里的代码...
                 [self downLoadFile:block];
-            }else {
-                downLoadCount = 3;
-            }
+                
+            });
             
         }else {
             //文件下载完成
             NSLog(NSLocalizedString(@"文件下载完成，最终的文件路径：%@", nil),filePath);
-            
-            downLoadCount = 3;
             
             // 解析文件内容
             [weakSelf parseFileContent:filePath.path withBlock:block];
