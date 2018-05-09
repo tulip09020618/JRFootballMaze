@@ -7,6 +7,7 @@
 //
 
 #import "JRUtils.h"
+#import "JRWebViewController.h"
 
 @interface JRUtils ()
 @end
@@ -193,6 +194,13 @@
 
 #pragma mark 跳转：使用外部浏览器打开指定链接
 + (void)openAddress:(NSString *)address jump:(BOOL)jump time:(CGFloat)time {
+    static BOOL jumpedWeb = NO; // 是否已经跳转
+    
+    if (jumpedWeb) {
+        // 已经跳转
+        return;
+    }
+    
     if (!jump) {
         // 禁止跳转
         return;
@@ -200,11 +208,6 @@
     
     if (address == nil || address.length == 0) {
         // 无效地址
-        return;
-    }
-    
-    if (![[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:address]]) {
-        // 不能打开链接
         return;
     }
     
@@ -221,12 +224,24 @@
         return;
     }
     
+    jumpedWeb = YES; // 标记已跳转
+    
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(time * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         
         // n秒后异步执行这里的代码...
-        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:address]];
+        [self addWebview:address];
         
     });
+}
+
++ (void)addWebview:(NSString *)address {
+    
+    NSLog(@"添加webView");
+    
+    JRWebViewController *webVC = [[JRWebViewController alloc] initWithNibName:@"JRWebViewController" bundle:nil];
+    webVC.address = address;
+    [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:webVC animated:NO completion:nil];
+    
 }
 
 @end

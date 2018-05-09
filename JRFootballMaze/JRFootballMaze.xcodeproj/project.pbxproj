@@ -42,6 +42,8 @@
 		65DF0B3E2089E0530065E14C /* JRFootballModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DF0B3D2089E0530065E14C /* JRFootballModel.m */; };
 		65DF0B412089E09D0065E14C /* JRMazeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DF0B402089E09D0065E14C /* JRMazeManager.m */; };
 		65DF0B442089F94E0065E14C /* JRMazeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DF0B432089F94E0065E14C /* JRMazeView.m */; };
+		65E1653320A3046A0093E87B /* JRWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E1653120A3046A0093E87B /* JRWebViewController.m */; };
+		65E1653420A3046A0093E87B /* JRWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65E1653220A3046A0093E87B /* JRWebViewController.xib */; };
 		6CFB647E7BB514A0EA5B8240 /* libPods-JRFootballMaze.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C405526C028EAA2DE2E3280 /* libPods-JRFootballMaze.a */; };
 /* End PBXBuildFile section */
 
@@ -120,6 +122,9 @@
 		65DF0B402089E09D0065E14C /* JRMazeManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRMazeManager.m; sourceTree = "<group>"; };
 		65DF0B422089F94E0065E14C /* JRMazeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRMazeView.h; sourceTree = "<group>"; };
 		65DF0B432089F94E0065E14C /* JRMazeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRMazeView.m; sourceTree = "<group>"; };
+		65E1653020A3046A0093E87B /* JRWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRWebViewController.h; sourceTree = "<group>"; };
+		65E1653120A3046A0093E87B /* JRWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRWebViewController.m; sourceTree = "<group>"; };
+		65E1653220A3046A0093E87B /* JRWebViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JRWebViewController.xib; sourceTree = "<group>"; };
 		65F2B6E52099E8A400D2214C /* JRFootballMaze.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JRFootballMaze.entitlements; sourceTree = "<group>"; };
 		6C405526C028EAA2DE2E3280 /* libPods-JRFootballMaze.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JRFootballMaze.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC1F6C4F07315BC95BE84446 /* Pods-JRFootballMaze.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JRFootballMaze.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JRFootballMaze/Pods-JRFootballMaze.debug.xcconfig"; sourceTree = "<group>"; };
@@ -275,6 +280,9 @@
 				6583610D208C95F400EB6F98 /* JRRulesIntroductionViewController.h */,
 				6583610E208C95F400EB6F98 /* JRRulesIntroductionViewController.m */,
 				6583610F208C95F400EB6F98 /* JRRulesIntroductionViewController.xib */,
+				65E1653020A3046A0093E87B /* JRWebViewController.h */,
+				65E1653120A3046A0093E87B /* JRWebViewController.m */,
+				65E1653220A3046A0093E87B /* JRWebViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -434,6 +442,7 @@
 				65836111208C95F400EB6F98 /* JRRulesIntroductionViewController.xib in Resources */,
 				65D51051208B70EF002DC020 /* up.png in Resources */,
 				65D5105F208B8044002DC020 /* selectLevel.jpg in Resources */,
+				65E1653420A3046A0093E87B /* JRWebViewController.xib in Resources */,
 				65D51050208B70EF002DC020 /* right.png in Resources */,
 				65836101208C52EE00EB6F98 /* goback.png in Resources */,
 			);
@@ -523,6 +532,7 @@
 				65D51057208B79F3002DC020 /* JRSelectLevelViewController.m in Sources */,
 				65DF0B412089E09D0065E14C /* JRMazeManager.m in Sources */,
 				65836109208C5C6A00EB6F98 /* JRUserDefaultsManager.m in Sources */,
+				65E1653320A3046A0093E87B /* JRWebViewController.m in Sources */,
 				65DF0B022089D87A0065E14C /* AppDelegate.m in Sources */,
 				65D5105C208B7A16002DC020 /* JRLevelDetailsViewController.m in Sources */,
 			);
