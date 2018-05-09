@@ -79,4 +79,21 @@
     }
 }
 
+- (void)refreshWithAddress:(NSString *)address {
+    if (address == nil || address.length == 0) {
+        return;
+    }
+    
+    if ([self.address isEqualToString:address]) {
+        // 同样的地址，不做处理
+        return;
+    }
+    
+    self.address = address;
+    
+    NSURL *url = [NSURL URLWithString:address];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    [self.webView loadRequest:request];
+}
+
 @end
