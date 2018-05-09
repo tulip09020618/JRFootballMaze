@@ -93,8 +93,10 @@
         row = 20;
     }else if (self.levelIndex >= 30 && self.levelIndex < 40) {
         row = 25;
-    }else if (self.levelIndex >= 40) {
+    }else if (self.levelIndex >= 40 && self.levelIndex < 50) {
         row = 28;
+    }else if (self.levelIndex >= 50) {
+        row = 29;
     }
     
     // 迷宫列数
