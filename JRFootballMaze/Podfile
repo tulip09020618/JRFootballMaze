@@ -3,6 +3,7 @@ platform :ios, "9.0"
 target 'JRFootballMaze' do
 
 pod 'AFNetworking'
-pod 'JPush'
+
+pod 'AVOSCloud'
 
 end
