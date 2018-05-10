@@ -9,7 +9,6 @@
 #import "JRUserDefaultsManager.h"
 
 #define USERDEFAULTS_LEVEL_INDEX @"userDefaultsLevelIndex" // 当前关卡
-#define USERDEFAULTS_JPUSH_TOKEN @"userDefaultsJPushToken" // 极光token
 
 @implementation JRUserDefaultsManager
 
@@ -34,35 +33,6 @@
     }
     
     return [levelNum integerValue];
-}
-    
-/**
- 保存上报极光推送token记录
- */
-+ (void)saveUploadJPushTokenRecord {
-    [[NSUserDefaults standardUserDefaults] setObject:@"yes" forKey:USERDEFAULTS_JPUSH_TOKEN];
-    [[NSUserDefaults standardUserDefaults] synchronize];
-}
-    
-/**
- 移除上报极光token记录
- */
-+ (void)removeUploadJPushTokenRecord {
-    [[NSUserDefaults standardUserDefaults] removeObjectForKey:USERDEFAULTS_JPUSH_TOKEN];
-    [[NSUserDefaults standardUserDefaults] synchronize];
-}
-    
-/**
- 查询上报极光token记录
- 
- @return 是否已经上报
- */
-+ (BOOL)getUploadJPushTokenRecord {
-    NSString *jpushToken = [[NSUserDefaults standardUserDefaults] objectForKey:USERDEFAULTS_JPUSH_TOKEN];
-    if (jpushToken != nil) {
-        return YES;
-    }
-    return NO;
 }
 
 @end

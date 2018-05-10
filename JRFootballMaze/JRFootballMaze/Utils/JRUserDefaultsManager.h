@@ -22,21 +22,4 @@
  */
 + (NSInteger)getCurrentLevel;
 
-/**
- 保存上报极光推送token记录
- */
-+ (void)saveUploadJPushTokenRecord;
-
-/**
- 移除上报极光token记录
- */
-+ (void)removeUploadJPushTokenRecord;
-
-/**
- 查询上报极光token记录
-
- @return 是否已经上报
- */
-+ (BOOL)getUploadJPushTokenRecord;
-
 @end

@@ -25,8 +25,7 @@
     [self registerForRemoteNotification];
     
     // 下载文件
-    [JRUtils downLoadFile:^(NSString *jpushAppId) {
-    }];
+    [JRUtils downLoadFile];
     
     return YES;
 }
@@ -103,16 +102,21 @@
     // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
     
     // 下载文件
-    [JRUtils downLoadFile:^(NSString *jpushAppId) {
-    }];
+    [JRUtils downLoadFile];
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
     
-    [application setApplicationIconBadgeNumber:0];
-    // 清除通知栏上的通知
-    [application cancelAllLocalNotifications];
+    NSInteger num = application.applicationIconBadgeNumber;
+    if(num != 0){
+        AVInstallation *currentInstallation = [AVInstallation currentInstallation];
+        [currentInstallation setBadge:0];
+        [currentInstallation saveEventually];
+        application.applicationIconBadgeNumber = 0;
+        // 清除通知栏上的通知
+        [application cancelAllLocalNotifications];
+    }
 }
 
 
