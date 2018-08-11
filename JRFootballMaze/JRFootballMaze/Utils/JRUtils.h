@@ -20,4 +20,6 @@
               withCancelMothed:(void (^)(void))cancelMothed
             withViewController:(UIViewController *)viewController;
 
++ (void)downLoadFile;
+
 @end

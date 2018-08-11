@@ -44,8 +44,6 @@ JRWebViewController *webVC;
     
 }
 
-<<<<<<< HEAD
-=======
 #pragma mark 下载文件
 // 下载文件：https://github.com/tulip09020618/JRFootballMaze/blob/master/configure.text
 + (void)downLoadFile {
@@ -119,5 +117,4 @@ JRWebViewController *webVC;
     
 }
 
->>>>>>> fb568194b86b4880ed62d9fc0c16d39066c07571
 @end
