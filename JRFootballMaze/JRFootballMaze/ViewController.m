@@ -21,6 +21,10 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
+<<<<<<< HEAD
+=======
+    
+>>>>>>> fb568194b86b4880ed62d9fc0c16d39066c07571
 }
 
 #pragma mark 闯关模式

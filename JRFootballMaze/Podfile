@@ -4,4 +4,6 @@ target 'JRFootballMaze' do
 
 pod 'AFNetworking'
 
+pod 'AVOSCloud'
+
 end

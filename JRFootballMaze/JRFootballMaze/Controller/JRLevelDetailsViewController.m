@@ -89,8 +89,14 @@
         row = 18;
     }else if (self.levelIndex >= 19 && self.levelIndex < 20) {
         row = 19;
-    }else if (self.levelIndex >= 20) {
+    }else if (self.levelIndex >= 20 && self.levelIndex < 30) {
         row = 20;
+    }else if (self.levelIndex >= 30 && self.levelIndex < 40) {
+        row = 25;
+    }else if (self.levelIndex >= 40 && self.levelIndex < 50) {
+        row = 28;
+    }else if (self.levelIndex >= 50) {
+        row = 29;
     }
     
     // 迷宫列数
